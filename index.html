@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A modern, feature-rich expense tracker to manage your finances with beautiful charts, budgets, and insights." />
+  <meta name="theme-color" content="#0f0f23" />
+  <title>ExpenseFlow — Smart Expense Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💰</text></svg>" />
+</head>
+<body>
+  <!-- App Shell -->
+  <div id="app" class="app">
+    <!-- Sidebar Navigation -->
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar__header">
+        <div class="sidebar__logo">
+          <span class="sidebar__logo-icon">💰</span>
+          <span class="sidebar__logo-text">ExpenseFlow</span>
+        </div>
+        <button id="sidebar-close" class="sidebar__close" aria-label="Close menu">✕</button>
+      </div>
+
+      <nav class="sidebar__nav" id="sidebar-nav">
+        <a href="#/" class="sidebar__link sidebar__link--active" data-route="/">
+          <span class="sidebar__link-icon">📊</span>
+          <span class="sidebar__link-text">Dashboard</span>
+        </a>
+        <a href="#/add" class="sidebar__link" data-route="/add">
+          <span class="sidebar__link-icon">➕</span>
+          <span class="sidebar__link-text">Add Transaction</span>
+        </a>
+        <a href="#/transactions" class="sidebar__link" data-route="/transactions">
+          <span class="sidebar__link-icon">📋</span>
+          <span class="sidebar__link-text">Transactions</span>
+        </a>
+        <a href="#/budgets" class="sidebar__link" data-route="/budgets">
+          <span class="sidebar__link-icon">🎯</span>
+          <span class="sidebar__link-text">Budgets</span>
+        </a>
+        <a href="#/reports" class="sidebar__link" data-route="/reports">
+          <span class="sidebar__link-icon">📈</span>
+          <span class="sidebar__link-text">Reports</span>
+        </a>
+        <a href="#/settings" class="sidebar__link" data-route="/settings">
+          <span class="sidebar__link-icon">⚙️</span>
+          <span class="sidebar__link-text">Settings</span>
+        </a>
+      </nav>
+
+      <div class="sidebar__footer" id="sidebar-footer">
+        <!-- Quick balance summary injected here -->
+      </div>
+    </aside>
+
+    <!-- Sidebar overlay for mobile -->
+    <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+    <!-- Main Content Area -->
+    <main class="main">
+      <!-- Top Bar -->
+      <header class="topbar">
+        <button id="menu-toggle" class="topbar__menu" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+        <h1 class="topbar__title" id="page-title">Dashboard</h1>
+        <div class="topbar__actions">
+          <button id="theme-toggle" class="topbar__btn" aria-label="Toggle theme" title="Toggle dark/light mode">
+            <span id="theme-icon">🌙</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Page Content -->
+      <div id="page-content" class="page-content">
+        <!-- Pages rendered here by router -->
+      </div>
+    </main>
+
+    <!-- Floating Action Button -->
+    <button id="fab" class="fab" aria-label="Add transaction" title="Quick add transaction">
+      <span class="fab__icon">+</span>
+    </button>
+
+    <!-- Toast Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Modal Container -->
+    <div id="modal-container"></div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
