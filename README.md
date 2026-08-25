@@ -9,6 +9,7 @@
 [![CSS3](https://img.shields.io/badge/CSS3-Modern%20Design-1572B6?style=flat-square&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![Chart.js](https://img.shields.io/badge/Chart.js-4.x-FF6384?style=flat-square&logo=chartdotjs&logoColor=white)](https://www.chartjs.org/)
 [![jsPDF](https://img.shields.io/badge/jsPDF-Supported-E11D48?style=flat-square)](https://github.com/parallax/jsPDF)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-000000?style=flat-square&logo=vercel&logoColor=white)](https://expense-flow-orcin.vercel.app/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
 
 <p align="center">
@@ -17,7 +18,21 @@
   Featuring interactive visual analytics, customizable budget management, multi-currency support, dark/light themes, and export capabilities.
 </p>
 
+<p align="center">
+  <a href="https://expense-flow-orcin.vercel.app/" target="_blank">
+    <img src="https://img.shields.io/badge/🚀%20View%20Live%20Demo-expense--flow--orcin.vercel.app-22c55e?style=for-the-badge" alt="Live Demo" />
+  </a>
+</p>
+
 </div>
+
+---
+
+## 🌐 Live Demo
+
+Explore the live application directly in your browser without any setup:
+
+🔗 **[https://expense-flow-orcin.vercel.app/](https://expense-flow-orcin.vercel.app/)**
 
 ---
 
